@@ -1,0 +1,5 @@
+@use '@angular/material' as mat;
+@include mat.core();
+$theme: mat.define-theme((color: (theme-type: light, primary: mat.$azure-palette), typography: (brand-family: 'Inter, Segoe UI, sans-serif')));
+html { @include mat.all-component-themes($theme); }
+html,body{margin:0;min-height:100%;background:#f8fafc;color:#172033;font-family:Inter,Segoe UI,sans-serif}*{box-sizing:border-box}
